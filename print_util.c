@@ -1,4 +1,4 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
  *_write - writes to a file descriptor once the file que is full
@@ -23,7 +23,7 @@ int _write(int fd, char *inp, int len)
 
 	static char writeque[BUFFER_t];
 	static int nque;
-	int i;
+	int k;
 
 	if (fd < 0)
 	{
@@ -41,13 +41,13 @@ int _write(int fd, char *inp, int len)
 			}
 			nque = 0;
 		}
-		i = 0;
-		while (i < len)
+		k = 0;
+		while (k < len)
 		{
-			writeque[nque + i] = inp[i];
-			i++;
+			writeque[nque + k] = inp[k];
+			k++;
 		}
-		writeque[nque + i] = '\0';
+		writeque[nque + k] = '\0';
 		nque += len;
 		return (100);
 	}
