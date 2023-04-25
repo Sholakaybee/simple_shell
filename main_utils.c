@@ -1,9 +1,9 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
  *getfpath - gets the full path if possible of name from
  *the environment variable
- *@name: the name of comand
+ *@name: the name 
  *Return: a full path of name or name it self on failure
  */
 char *getfpath(char *name)
@@ -52,7 +52,7 @@ char *getfpath(char *name)
 void parseargs(char *cmd, const char *del, char ***args, int mod)
 {
 	char *tokenized = NULL, **tmp;
-	int index = 0, i;
+	int index = 0, k;
 
 	*args = NULL;
 	tokenized = _strtok(cmd, del, mod);
@@ -64,11 +64,11 @@ void parseargs(char *cmd, const char *del, char ***args, int mod)
 			*args = tmp;
 		else
 		{
-			i = 0;
+			k = 0;
 			while ((*args)[i])
 			{
-				tmp[i] = _strdup((*args)[i]);
-				i++;
+				tmp[k] = _strdup((*args)[i]);
+				k++;
 			}
 			freedp(*args);
 			*args = tmp;
