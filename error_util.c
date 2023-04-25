@@ -1,10 +1,11 @@
-#include "gbk.h"
-#include "errlist.h"
+#include "main.h"
+#include "errlists.h"
 /**
- *perr - prints error message
+ *perr - function that prints error message
  *@prog: name of program
  *@cmdr: pointer to number of commands run including this one
  *@msg: message to be printed
+ *Return: 0 when successful
  */
 void perr(char *prog, int *cmdr, char *msg)
 {
