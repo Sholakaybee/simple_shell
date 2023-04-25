@@ -1,9 +1,8 @@
 #ifndef ERRLST
 #define ERRLST
 
-hhdggsjjsgsjjsjsjggsjs
-hsjjsshgshgshshhshd
-const char *errlist[] = {
+const char *errlist[] =
+{
 	"Undefined error",
 
 	"Operation not permitted",
