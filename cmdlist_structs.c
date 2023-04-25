@@ -1,8 +1,8 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
- * add_node - adds a new node at the end of a cmdnode
- * @head: double pointer to head of list
+ * add_node - function that adds a new node at the end of a cmdnode
+ * @head: double pointer to head
  * @cmd: the command
  * @op: the operator between  the current command the next one
  * Return: 0 on sucess -1 on failure
@@ -82,7 +82,7 @@ cmdnode *build_list(char *cmds)
 }
 
 /**
- *print_cmdnodes - print contents of a linked list
+ *print_cmdnodes - function that print contents of a linked list
  *@head: pointer to the first node of the list
  *Return: 0 on sucess -1 on faliure
  */
@@ -105,7 +105,7 @@ int print_cmdnodes(cmdnode *head)
 }
 
 /**
- * free_cmdlist - frees a cmdnode list
+ * free_cmdlist - function that frees a cmdnode list
  * @head: pointer to head of list
  */
 void free_cmdlist(cmdnode *head)
@@ -125,7 +125,7 @@ void free_cmdlist(cmdnode *head)
 	head = NULL;
 }
 /**
- * add_nodein - adds a new node at the end of a cmdnode
+ * add_nodein - function that adds a new node at the end of a cmdnode
  * @head: double pointer to head of list
  * @cmd: the command and arguments arry to add
  * @operator: the operator between  the current command the next one
@@ -136,7 +136,7 @@ cmdnode *add_nodein(cmdnode **head, char *cmd, char *operator, int pos)
 {
 	cmdnode *newNode = smalloc(sizeof(cmdnode));
 	cmdnode *current = NULL, *tmp = NULL;
-	int i = 1;
+	int k = 1;
 
 	if (!head)
 		return (NULL);
@@ -148,8 +148,8 @@ cmdnode *add_nodein(cmdnode **head, char *cmd, char *operator, int pos)
 	else
 	{
 		current = *head;
-		while (current->next && i < pos)
-			current = current->next, i++;
+		while (current->next && k < pos)
+			current = current->next, k++;
 		tmp = current->next;
 		current->next = newNode;
 		newNode->next = tmp;
