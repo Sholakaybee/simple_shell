@@ -1,11 +1,11 @@
-#include "gbk.h"
+#include "main.h"
 #include <stdio.h>
 
 static void handlerc(int);
 void cmdmv(cmdnode **, int);
 int xcmd(char **, int, alias **);
 /**
- *main - main loop for the gbk shell
+ *main - function for main loop for the gbk shell
  *@argc: number of arguments
  *@argv: script file names
  *@argp: envrionmental variables
