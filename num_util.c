@@ -1,4 +1,4 @@
-#include "gbk.h"
+#include "main.h"
 
 
 /**
@@ -9,9 +9,9 @@
  */
 int powB(unsigned int base, int power)
 {
-	int i, prod = 1;
+	int k, prod = 1;
 
-	for (i = 0; i < power; i++)
+	for (k = 0; i < power; k++)
 	{
 		prod = prod * base;
 	}
