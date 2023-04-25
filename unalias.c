@@ -1,8 +1,8 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
  *remove_alias - remove a node with a key key from a linked list
- *@head: the key of the node to be removed
+ *@head: the head key of the node to be removed
  *@key: the key of the node to be removed
  *Return: 0 on sucess -1 on faliure
  */
