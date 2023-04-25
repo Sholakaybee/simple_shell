@@ -1,10 +1,10 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
- *add_alias - add a node to a linked list
- *@head: the key of the node to be removed
- *@key: the key to add in the node
- *@value: the value to be added with the key
+ *add_alias - function to add a node to a linked list
+ *@head: key of the node to be removed
+ *@key: key to add in the node
+ *@value: value to be added with the key
  *Return: 0 on sucess -1 on faliure
  */
 int add_alias(alias **head, char *key, char *value)
@@ -42,7 +42,7 @@ int add_alias(alias **head, char *key, char *value)
 
 
 /**
- *print_aliass - print contents of a linked list
+ *print_aliass - function that print contents of a linked list
  *@head: pointer to the first node of the list
  *Return: 0 on sucess -1 on faliure
  */
@@ -68,7 +68,7 @@ int print_aliass(alias *head)
 /**
  *print_alias - prints contents of a node whose key is key
  *@head: pointer to the first node of the list
- *@key: the key of the node to be printed
+ *@key: key of the node to be printed
  *Return: 0 on sucess -1 on faliure
  */
 int print_alias(alias *head, char *key)
@@ -104,7 +104,7 @@ int print_alias(alias *head, char *key)
 int handle_alias(char **arg, alias **aliashead)
 {
 	int argc = arlen(arg);
-	int i = 0;
+	int k = 0;
 	char **tmp = NULL;
 
 	if (argc == 0)
@@ -115,23 +115,23 @@ int handle_alias(char **arg, alias **aliashead)
 
 	if (argc > 1)
 	{
-		i += 1;
-		while (arg[i])
+		k += 1;
+		while (arg[k])
 		{
-			parseargs(arg[i], "=", &tmp, 0);
+			parseargs(arg[k], "=", &tmp, 0);
 			if (arlen(tmp) > 1)
 				add_alias(aliashead, tmp[0], tmp[1]);
 			else
 				print_alias(*aliashead, tmp[0]);
 			freedp(tmp);
-			i++;
+			k++;
 		}
 	}
 	return (0);
 }
 
 /**
- *freealias - free the alias linked list
+ *freealias -function that free the alias linked list
  *@head: pointer to the first node of the list
  *Return: 0 on sucess -1 on faliure
  */
