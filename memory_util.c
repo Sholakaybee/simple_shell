@@ -1,4 +1,4 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
  *freedp - frees a double pointer that has been correctly allocated
@@ -26,13 +26,13 @@ void freedp(char **a)
  */
 int arlen(char **a)
 {
-	int i = 0;
+	int k = 0;
 
 	if (!a)
-		return (i);
+		return (k);
 	while (*a)
-		i++, a++;
-	return (i);
+		k++, a++;
+	return (k);
 }
 /**
 *trims - trims space in front of a string and more than one spaces in between
@@ -77,17 +77,17 @@ void *smalloc(unsigned int size)
 {
 	char *pointer = malloc(size);
 	void *_pointer = NULL;
-	unsigned int i = 0;
+	unsigned int k = 0;
 
 	if (!pointer)
 	{
 		perr(NULL, NULL, "ERROR ALLOCATING MEMORY");
 		exit(-1);
 	}
-	while (i < size)
+	while (k < size)
 	{
 		pointer[i] = '\0';
-		i += 1;
+		k += 1;
 	}
 	_pointer = (void *)pointer;
 	return (_pointer);
