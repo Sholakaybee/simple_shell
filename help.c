@@ -1,8 +1,9 @@
 #include "help.h"
 
 /**
- *phelp - prints help for arg
+ *phelp - function that prints help for arg
  *@arg: string whose pirnt to be printed
+ *Return: 0 when successful
  */
 void phelp(char *arg)
 {
