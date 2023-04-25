@@ -1,7 +1,7 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
-*signexpand - expand commo signs
+*signexpand - function that expand commo signs
 *@str: string to be manipulated
 *@stat: last exit stat
 */
