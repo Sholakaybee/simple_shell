@@ -1,23 +1,23 @@
-#include "gbk.h"
+#include "main.h"
 #define l(x) _strlen((x))
 
 /**
-*handle_exit - decides exit code
-*@cmd: list of args
+*handle_exit - function that decides exit code
+*@cmd: list of args command
 *Return: exit code
 */
 int handle_exit(char **cmd)
 {
-	int exitstatus = 0, i = 0, str_in = 0;
+	int exitstatus = 0, k = 0, str_in = 0;
 	char *ermsg;
 
 	if (cmd[1])
 	{
-		while (cmd[1][i])
+		while (cmd[1][k])
 		{
-			if (!('0' <= cmd[1][i] && '9' >= cmd[1][i]))
+			if (!('0' <= cmd[1][k] && '9' >= cmd[1][k]))
 				str_in = 1;
-			i++;
+			k++;
 		}
 		ermsg = smalloc(l("exit: Illegal number: ") + l(cmd[1]) + 4);
 		_strcpy(ermsg, "exit: Illegal number: ");
@@ -44,7 +44,7 @@ int handle_exit(char **cmd)
 	return (exitstatus);
 }
 /**
- *handlebin - handles builtin commands
+ *handlebin - function that handles builtin commands
  *@cmd: command arguements
  *@head: head of the alias list
  *Return: 0 if builting commond executed or 1 if not
