@@ -1,4 +1,4 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
  *_chdir - changes current working directory to path
