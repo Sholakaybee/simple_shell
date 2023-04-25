@@ -1,4 +1,4 @@
-#include "gbk.h"
+#include "main.h"
 /**
  *findd - finds the number occurance of tof in str
  *@str: string to be searched
@@ -8,7 +8,7 @@
 int findd(char *str, char *tof)
 {
 	char *tokenized = NULL, *new = NULL;
-	int i = 0;
+	int k = 0;
 
 	if (_strlen(tof) > _strlen(str))
 		return (0);
@@ -16,14 +16,14 @@ int findd(char *str, char *tof)
 	tokenized = _strtok(new, tof, 1);
 	while (tokenized != NULL)
 	{
-		i++;
+		k++;
 		tokenized = _strtok(NULL, tof, 1);
 	}
 	free(new);
 	/*icase tofind is at th end*/
 	if (_strcmps(str + _strlen(str) - _strlen(tof), tof) == 1)
 		i++;
-	return (i - 1);
+	return (k - 1);
 }
 /**
  *fnrep - finds and replaces part of a string
