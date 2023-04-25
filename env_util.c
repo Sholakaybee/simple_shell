@@ -1,11 +1,11 @@
-#include "gbk.h"
+#include "main.h"
 #define l(x) _strlen((x))
 #define cch const char
 
 /**
- *_putenv - addes es to environ
+ *_putenv - function for the environ
  *@es: environmnetal varibale value pair
- *Return: 0 on secuss and -1 on faliure
+ *Return: 0 on sucess and -1 on faliure
  */
 int _putenv(char *es)
 {
@@ -35,7 +35,7 @@ int _putenv(char *es)
 }
 
 /**
- *_setenv - addes es to environ if it doesn't already
+ *_setenv - function that environ if it doesn't already
  *exist or overwrite is enabled
  *@name: variable name
  *@value: value
@@ -45,7 +45,7 @@ int _putenv(char *es)
 int _setenv(cch *name, cch *value, __attribute__((unused))int overwrite)
 {
 	char *es, **ep, *var;
-	int i = 0;
+	int k = 0;
 
 	if (name == NULL || name[0] == '\0' || value == NULL)
 		return (-1);
@@ -59,17 +59,17 @@ int _setenv(cch *name, cch *value, __attribute__((unused))int overwrite)
 	if (environ)
 	{
 		ep = sarrdup(environ);
-		while (ep[i])
+		while (ep[k])
 		{
 
 			var = _strtok(ep[i], "=", 0);
 			if (!_strcmp(var, (char *)name))
 			{
-				free(environ[i]);
-				environ[i] = smalloc(l(name) + l(value) + 4);
-				_strcpy(environ[i], (char *)name);
-				_strcat(environ[i], "=");
-				_strcat(environ[i], (char *)value);
+				free(environ[k]);
+				environ[k] = smalloc(l(name) + l(value) + 4);
+				_strcpy(environ[k], (char *)name);
+				_strcat(environ[k], "=");
+				_strcat(environ[k], (char *)value);
 				freedp(ep);
 				return (0);
 			}
@@ -116,7 +116,7 @@ int _unsetenv(const char *name)
 }
 
 /**
- *_printenv - prints environmental variables
+ *_printenv - function that prints environmental variables
  **/
 void _printenv(void)
 {
@@ -143,7 +143,7 @@ void _printenv(void)
  */
 char *_getenv(const char *name)
 {
-	int len, i;
+	int len, k;
 	const char *np;
 	char **p, *cp;
 
@@ -154,10 +154,10 @@ char *_getenv(const char *name)
 	len = np - name;
 	for (p = environ; (cp = *p) != NULL; ++p)
 	{
-		for (np = name, i = len; i && *cp; i--)
+		for (np = name, k = len; i && *cp; k--)
 			if (*cp++ != *np++)
 				break;
-		if (i == 0 && *cp++ == '=')
+		if (k == 0 && *cp++ == '=')
 			return (cp);
 	}
 	return (NULL);
