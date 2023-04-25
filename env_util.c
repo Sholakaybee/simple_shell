@@ -62,7 +62,7 @@ int _setenv(cch *name, cch *value, __attribute__((unused))int overwrite)
 		while (ep[k])
 		{
 
-			var = _strtok(ep[i], "=", 0);
+			var = _strtok(ep[k], "=", 0);
 			if (!_strcmp(var, (char *)name))
 			{
 				free(environ[k]);
@@ -73,7 +73,7 @@ int _setenv(cch *name, cch *value, __attribute__((unused))int overwrite)
 				freedp(ep);
 				return (0);
 			}
-			i++;
+			k++;
 		}
 		freedp(ep);
 	}
@@ -154,7 +154,7 @@ char *_getenv(const char *name)
 	len = np - name;
 	for (p = environ; (cp = *p) != NULL; ++p)
 	{
-		for (np = name, k = len; i && *cp; k--)
+		for (np = name, k = len; k && *cp; k--)
 			if (*cp++ != *np++)
 				break;
 		if (k == 0 && *cp++ == '=')

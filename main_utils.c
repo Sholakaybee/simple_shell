@@ -65,9 +65,9 @@ void parseargs(char *cmd, const char *del, char ***args, int mod)
 		else
 		{
 			k = 0;
-			while ((*args)[i])
+			while ((*args)[k])
 			{
-				tmp[k] = _strdup((*args)[i]);
+				tmp[k] = _strdup((*args)[k]);
 				k++;
 			}
 			freedp(*args);

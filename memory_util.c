@@ -86,7 +86,7 @@ void *smalloc(unsigned int size)
 	}
 	while (k < size)
 	{
-		pointer[i] = '\0';
+		pointer[k] = '\0';
 		k += 1;
 	}
 	_pointer = (void *)pointer;
