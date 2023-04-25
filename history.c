@@ -1,7 +1,7 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
- * whistory - writes history of commands
+ * whistory - function that writes history of commands
  * @history: command to be stored in the history list
  * Return: 0 on success and 1 in faliure
  */
@@ -19,16 +19,7 @@ int whistory(char *history)
 	free(filename);
 	if (fd < 0)
 		return (1);
-	/*put the number of comments on the top*/
-	/*
-	 *	if (first)
-	 *	{
-	 *		w = read(fd, tmp, 1);
-	 *		while (w > 0 && *history != '\n' )
-	 *			w = read(fd, history, 1);
-	 *		_atoi(tmp);
-	 *	}
-	 */
+
 	if (len)
 	{
 		tmp = smalloc(len + 4);
@@ -48,7 +39,7 @@ int whistory(char *history)
 
 
 /**
- * phistory - prints histories
+ * phistory - function that prints histories
  * Return: 0 on success and 1 in faliure
  */
 int phistory(void)
