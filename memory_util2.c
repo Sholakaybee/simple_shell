@@ -1,7 +1,7 @@
-#include "gbk.h"
+#include "main.h"
 
 /**
- *sarrdup - safe array duplicate
+ *sarrdup - function that safe array duplicate
  *@src: array to be duplicated
  *Return: a double pointer to the newly allocated array
  */
