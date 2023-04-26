@@ -1,7 +1,7 @@
 #include "main.h"
-nfbsbsns
+
 /**
- * exec_line - finds builtins and commands
+ * exec_line - function to finds builtins and commands
  *
  * @datash: data relevant (args)
  * Return: 1 on success.
