@@ -1,7 +1,7 @@
 #include "main.h"
-niksnkndksndksndk
+
 /**
- * cd_dot - changes to the parent directory
+ * cd_dot - to changes to the parent directory
  *
  * @datash: data relevant (environ)
  *
@@ -52,7 +52,7 @@ void cd_dot(data_shell *datash)
 }
 
 /**
- * cd_to - changes to a directory given
+ * cd_to - to changes to a directory given
  * by the user
  *
  * @datash: data relevant (directories)
@@ -87,7 +87,7 @@ void cd_to(data_shell *datash)
 }
 
 /**
- * cd_previous - changes to the previous directory
+ * cd_previous - to changes to the previous directory
  *
  * @datash: data relevant (environ)
  * Return: void
@@ -129,7 +129,7 @@ void cd_previous(data_shell *datash)
 }
 
 /**
- * cd_to_home - changes to home directory
+ * cd_to_home - to changes to home directory
  *
  * @datash: data relevant (environ)
  * Return: void
