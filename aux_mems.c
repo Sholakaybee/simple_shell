@@ -1,7 +1,7 @@
 #include "main.h"
-ijnajnjansianksnka
+
 /**
- * _memcpy - copies information btwn pointers
+ * _memcpy - function to copies information btwn pointers
  * @newptr: pointer to destination
  * @ptr: source pointer
  * @size: new pointer size
@@ -25,6 +25,7 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size)
  * Return: ptr
  * if new_size == old_size, returns ptr without changes
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *newptr;
@@ -62,6 +63,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
  * Return: ptr
  * if new_size == old_size, returns ptr without changes
  */
+
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size)
 {
 	char **newptr;
