@@ -1,7 +1,7 @@
 #include "main.h"
-njwbsehvhgvahvs
+
 /**
- * is_cdir - checks ":" if is in the current directory
+ * is_cdir - To checks ":" if is in the current directory
  * @path: type char pointer
  * @i: type int pointer of index
  * Return: 1 if the path is searchable in the cd, 0 otherwise
@@ -21,11 +21,12 @@ int is_cdir(char *path, int *i)
 }
 
 /**
- * _which - locates a command
+ * _which - To locates a command
  * @cmd: command name
  * @_environ: environment variable
  * Return: location of the command.
  */
+
 char *_which(char *cmd, char **_environ)
 {
 	char *path, *ptr_path, *token_path, *dir;
@@ -70,7 +71,7 @@ char *_which(char *cmd, char **_environ)
 }
 
 /**
- * is_executable - checks if is an executable
+ * is_executable - To checks if is an executable
  * @datash: data struct
  * Return: 0 if is not an executable, other number if it does
  */
@@ -114,7 +115,7 @@ int is_executable(data_shell *datash)
 }
 
 /**
- * check_error_cmd - checks if user has permissions to access
+ * check_error_cmd - To checks if user has permissions to access
  * @dir: directory of destination
  * @datash: data structure
  * Return: 1 if there is an error, 0 if not
@@ -150,7 +151,7 @@ int check_error_cmd(char *dir, data_shell *datash)
 }
 
 /**
- * cmd_exec - executes command lines
+ * cmd_exec - function to executes command lines
  * @datash: data relevant
  * Return: on success 1
  */
