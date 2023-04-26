@@ -1,7 +1,8 @@
 #include "main.h"
-snmskoeelan
+
+
 /**
- * aux_help_env - help inform the builtin env
+ * aux_help_env - function to help inform the builtin env
  * Return: nothing
  */
 void aux_help_env(void)
@@ -14,7 +15,7 @@ void aux_help_env(void)
 
 }
 /**
- * aux_help_setenv - help inform the builtin setenv
+ * aux_help_setenv - functiont to help inform the builtin setenv
  * Return: nothing
  */
 void aux_help_setenv(void)
@@ -29,7 +30,7 @@ void aux_help_setenv(void)
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_unsetenv - informats for the builtin unsetenv
+ * aux_help_unsetenv - function to informats for the builtin unsetenv
  * Return: nothing
  */
 void aux_help_unsetenv(void)
