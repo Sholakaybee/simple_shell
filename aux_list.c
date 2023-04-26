@@ -1,11 +1,13 @@
 #include "main.h"
-nmnmaknsdkjsnd
+
+
 /**
- * add_sep_node_end - adds a separator
+ * add_sep_node_end - function to adds a separator
  * @head: linked list head.
  * @sep: separator found (; | &).
  * Return: head address.
  */
+
 sep_list *add_sep_node_end(sep_list **head, char sep)
 {
 	sep_list *new, *temp;
@@ -31,10 +33,11 @@ sep_list *add_sep_node_end(sep_list **head, char sep)
 }
 
 /**
- * free_sep_list - it frees a sep_list
+ * free_sep_list - function to frees a sep_list
  * @head: linked list head.
  * Return: nothing.
  */
+
 void free_sep_list(sep_list **head)
 {
 	sep_list *temp;
@@ -53,11 +56,12 @@ void free_sep_list(sep_list **head)
 }
 
 /**
- * add_line_node_end - adds command line at the end of a line_list
+ * add_line_node_end - function to adds command line
  * @head: linked list head
  * @line: command line
  * Return: The head address
  */
+
 line_list *add_line_node_end(line_list **head, char *line)
 {
 	line_list *new, *temp;
@@ -83,7 +87,7 @@ line_list *add_line_node_end(line_list **head, char *line)
 }
 
 /**
- * free_line_list - free a line_list
+ * free_line_list - function to free line_list
  * @head: linked list head
  * Return: nothing
  */
