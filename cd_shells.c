@@ -1,7 +1,7 @@
 #include "main.h"
-hsbjsbjsjnsnnsd
+
 /**
- * cd_shell - change directory
+ * cd_shell - function to change directory
  * @datash: data relevant
  * Return: on success 1
  */
