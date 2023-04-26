@@ -1,7 +1,7 @@
 #include "main.h"
-nsnsmsnmd
+
 /**
- * get_error - calls the error according the builtin
+ * get_error - To calls the error according the builtin
  * @datash: data structure that contains arg
  * @eval: error value
  * Return: error
