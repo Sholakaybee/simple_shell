@@ -1,10 +1,11 @@
 #include "main.h"
-nknasnjankna
+
 /**
- * _strdup - duplicates a str in the heap memory.
+ * _strdup - To duplicates a str in the heap memory.
  * @s: Type char pointer str
  * Return: duplicated str
  */
+
 char *_strdup(const char *s)
 {
 	char *new;
@@ -23,6 +24,7 @@ char *_strdup(const char *s)
  * @s: Type char pointer
  * Return: Always 0.
  */
+
 int _strlen(const char *s)
 {
 	int len;
@@ -40,6 +42,7 @@ int _strlen(const char *s)
  *
  * Return: 1 if are equals, 0 if not.
  */
+
 int cmp_chars(char str[], const char *delim)
 {
 	unsigned int i, j, k;
@@ -61,12 +64,13 @@ int cmp_chars(char str[], const char *delim)
 }
 
 /**
- * _strtok - splits a string by some delimiter.
+ * _strtok - To splits a string by some delimiter.
  * @str: input string.
  * @delim: delimiter.
  *
  * Return: string splited.
  */
+
 char *_strtok(char str[], const char *delim)
 {
 	static char *splitted, *str_end;
@@ -111,11 +115,12 @@ char *_strtok(char str[], const char *delim)
 }
 
 /**
- * _isdigit - defines if string passed is a number
+ * _isdigit - To defines if string passed is a number
  *
  * @s: input string
  * Return: 1 if string is a number. 0 in other case.
  */
+
 int _isdigit(const char *s)
 {
 	unsigned int i;
