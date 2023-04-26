@@ -3,7 +3,7 @@
 /**
  *getfpath - gets the full path if possible of name from
  *the environment variable
- *@name: the name 
+ *@name: the name
  *Return: a full path of name or name it self on failure
  */
 char *getfpath(char *name)
