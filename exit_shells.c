@@ -1,7 +1,8 @@
 #include "main.h"
-njnfjf
+
+
 /**
- * exit_shell - close the shell
+ * exit_shell - function to close the shell
  * @datash: data relevant
  * Return: 0 on success
  */
