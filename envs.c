@@ -1,7 +1,7 @@
 #include "main.h"
-mklnsdknskdn
+
 /**
- * cmp_env_name - compares env variables names
+ * cmp_env_name - To compares env variables names
  * with the name passed.
  * @nenv: name of the environment variable
  * @name: name passed
@@ -24,7 +24,7 @@ int cmp_env_name(const char *nenv, const char *name)
 }
 
 /**
- * _getenv - get an environment variable
+ * _getenv - function to get an environment variable
  * @name: name of the environment variable
  * @_environ: environment variable
  *
@@ -56,7 +56,7 @@ char *_getenv(const char *name, char **_environ)
 }
 
 /**
- * _env - prints the evironment variables
+ * _env - function to prints the evironment variables
  *
  * @datash: data relevant.
  * Return: 1 on success.
