@@ -11,7 +11,7 @@ int powB(unsigned int base, int power)
 {
 	int k, prod = 1;
 
-	for (k = 0; i < power; k++)
+	for (k = 0; 1 < power; k++)
 	{
 		prod = prod * base;
 	}

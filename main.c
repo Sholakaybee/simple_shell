@@ -132,8 +132,6 @@ int xcmd(char **cmd_l, int index, alias **aliashead)
 	static int childstat, exitstat;
 	cmdnode *head = NULL, *_head = NULL, *tmp_n = NULL;
 
-
-	/*write the command to history*/
 	whistory(cmds);
 	_head = build_list(cmds), head = _head;
 	while (head)

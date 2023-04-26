@@ -22,7 +22,7 @@ int findd(char *str, char *tof)
 	free(new);
 	/*icase tofind is at th end*/
 	if (_strcmps(str + _strlen(str) - _strlen(tof), tof) == 1)
-		i++;
+		k++;
 	return (k - 1);
 }
 /**
