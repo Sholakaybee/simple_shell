@@ -1,7 +1,7 @@
 #include "main.h"
-jsbjsb
+
 /**
- * read_line - reads the input string.
+ * read_line - function to reads the input string.
  *
  * @i_eof: return value of getline function
  * Return: input string
