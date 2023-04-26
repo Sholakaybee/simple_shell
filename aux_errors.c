@@ -1,7 +1,7 @@
 #include "main.h"
-kskjnsndkskkdks
+
 /**
- * strcat_cd - concatenates the message for cd error
+ * strcat_cd - function concatenates the message for cd error
  * @datash: data relevant
  * @msg: message to display
  * @error: output mssg
@@ -75,7 +75,7 @@ char *error_get_cd(data_shell *datash)
 }
 
 /**
- * error_not_found - generic error mssg for command not found
+ * error_not_found - function for error mssg for command not found
  * @datash: data relevant
  * Return: Error message
  */
@@ -106,7 +106,7 @@ char *error_not_found(data_shell *datash)
 }
 
 /**
- * error_exit_shell - generic error message for exit in get_exit
+ * error_exit_shell - function for error message for exit in get_exit
  * @datash: data relevant
  * Return: Error message
  */
