@@ -1,11 +1,12 @@
 #include "main.h"
-nndsjdsnd
+
 /**
- * get_sigint - Handle the crtl + c call in prompt
+ * get_sigint - function to handle the crtl + c call in prompt
  * @sig: Signal handler
  *
  * Return: void
  */
+
 void get_sigint(int sig)
 {
 	(void)sig;
