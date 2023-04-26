@@ -1,7 +1,7 @@
 #include "main.h"
-nnbanbahva
+
 /**
- * check_env - verify if the typed variable is an envn variable
+ * check_env - to verify if the typed variable is an envn variable
  * @h: linked list head
  * @in: input string
  * @data: data struc
@@ -41,7 +41,7 @@ void check_env(r_var **h, char *in, data_shell *data)
 }
 
 /**
- * check_vars - detect if the typed variable is $$ or $?
+ * check_vars - to detect if the typed variable is $$ or $?
  * @h: linked list head
  * @in: input string
  * @st: last status of the Shell
@@ -82,7 +82,7 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 }
 
 /**
- * replaced_input - replaces string to variables
+ * replaced_input - function to replaces string to variables
  * @head: head of the linked list
  * @input: input string
  * @new_input: new input string (replace)
@@ -133,7 +133,7 @@ char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 }
 
 /**
- * rep_var - call the functions to replace string into var
+ * rep_var - To call the functions to replace string into var
  * @input: the input string
  * @datash: data struct
  * Return: replaced string
