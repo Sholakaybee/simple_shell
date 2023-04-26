@@ -1,7 +1,8 @@
 #include "main.h"
-bmnsnsnd
+
+
 /**
- * without_comment - deletes comments from the input
+ * without_comment - function to deletes comments from the input
  *
  * @in: input string
  * Return: input without comments
@@ -36,7 +37,7 @@ char *without_comment(char *in)
 }
 
 /**
- * shell_loop - Loop of shell
+ * shell_loop - To loop of shell
  * @datash: data relevant (av, input, args)
  *
  * Return: void
