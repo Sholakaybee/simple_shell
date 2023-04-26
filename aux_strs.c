@@ -1,7 +1,8 @@
 #include "main.h"
-nerninenrknkre
+
+
 /**
- * _strcat - concatenates 2 strings
+ * _strcat - function for concatenates 2 strings
  * @dest: pointer the dest of the copied str
  * @src: const char pointer the source of str
  * Return: dest
@@ -22,12 +23,14 @@ char *_strcat(char *dest, const char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
 /**
  * *_strcpy - Copy the string pointed to by src
  * @dest: Type char pointer to the dest of the copied str
  * @src: Type char pointer to the source of str
  * Return: dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 
@@ -46,6 +49,7 @@ char *_strcpy(char *dest, char *src)
  * @s2: type str compared
  * Return: Always 0
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -65,6 +69,7 @@ int _strcmp(char *s1, char *s2)
  * @c: character
  * Return: the pointer to the first occurrence of the c char
  */
+
 char *_strchr(char *s, char c)
 {
 	unsigned int i = 0;
@@ -82,6 +87,7 @@ char *_strchr(char *s, char c)
  * @accept: accepted bytes
  * Return: the number of accepted bytes
  */
+
 int _strspn(char *s, char *accept)
 {
 	int i, j, bool;
