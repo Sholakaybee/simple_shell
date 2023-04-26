@@ -1,7 +1,7 @@
 #include "main.h"
-knjsnjbsvd
+
 /**
- * copy_info - copy the info to be create
+ * copy_info - function to copy the info to be create
  * a new env or alias
  * @name: name (env, alies)
  * @value: value (env or alias)
@@ -25,7 +25,7 @@ char *copy_info(char *name, char *value)
 }
 
 /**
- * set_env - sets environment variable
+ * set_env - function to sets environment variable
  * @name: environment variable name
  * @value: environment variable value
  * @datash: data struct
@@ -56,7 +56,7 @@ void set_env(char *name, char *value, data_shell *datash)
 }
 
 /**
- * _setenv - compares env variables name
+ * _setenv - function to compares env variables name
  * with the name passed.
  * @datash: data relevant (env name and env value)
  * Return: on success 1
@@ -76,7 +76,7 @@ int _setenv(data_shell *datash)
 }
 
 /**
- * _unsetenv - deletes a environment variable
+ * _unsetenv - to deletes a environment variable
  * @datash: data relevant (env name)
  * Return: on success 1
  */
